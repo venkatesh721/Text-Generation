@@ -1,0 +1,37 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local datasets and trained artifacts
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+!outputs/generated_samples.txt
+!outputs/training_history.json
+!outputs/loss_curve.png
+!outputs/regularized_generated_samples.txt
+!outputs/regularized_training_history.json
+!outputs/regularized_loss_curve.png
+!outputs/comparison_baseline_training_history.json
+!outputs/comparison_baseline_loss_curve.png
+!outputs/accuracy_baseline_history.json
+!outputs/accuracy_baseline_plot.png
+!outputs/accuracy_baseline_metadata.json
+!outputs/accuracy_baseline_samples.txt
+!outputs/vocab_5000_history.json
+!outputs/vocab_5000_plot.png
+!outputs/vocab_5000_metadata.json
+!outputs/vocab_5000_samples.txt
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
